@@ -9,7 +9,7 @@ import sys
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi("UI1.ui", self)
+        uic.loadUi("main.ui", self)
         self.con = sqlite3.connect("coffee.sqlite")
         self.pushButton.clicked.connect(self.update_result)
 
